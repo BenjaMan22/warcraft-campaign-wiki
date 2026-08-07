@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>A Short History of Azeroth · The Booty Bay Chronicle</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400;700&amp;family=Spectral:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="BBC WoW Campaign"/><meta property="og:title" content="A Short History of Azeroth · The Booty Bay Chronicle"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="A Short History of Azeroth · The Booty Bay Chronicle"/><meta name="twitter:description" content="A Short History of Azeroth What this is The history your character already knows, in the order they would have learned it."/><meta property="og:description" content="A Short History of Azeroth What this is The history your character already knows, in the order they would have learned it."/><meta property="og:image:alt" content="A Short History of Azeroth What this is The history your character already knows, in the order they would have learned it."/><meta property="og:image" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta property="og:image:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta name="twitter:image" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="benjaman22.github.io/warcraft-campaign-wiki"/><meta property="og:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/Lore/History/A-Short-History-of-Azeroth"/><meta property="twitter:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/Lore/History/A-Short-History-of-Azeroth"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="A Short History of Azeroth What this is The history your character already knows, in the order they would have learned it."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvRG5ELVdvVy1DYW1wYWlnbi9EbkQtV29XLUNhbXBhaWduL3F1YXJ0ei9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://benjaman22.github.io/warcraft-campaign-wiki/index.xml"/></head><body data-slug="Lore/History/A-Short-History-of-Azeroth"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">BBC WoW Campaign</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-127"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-127" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Lore/">Lore</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Lore/History/">History</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>A Short History of Azeroth</a></div></nav><h1 class="article-title">A Short History of Azeroth</h1><ul class="tags"><li><a href="../../tags/lore" class="internal tag-link">lore</a></li><li><a href="../../tags/reference" class="internal tag-link">reference</a></li><li><a href="../../tags/player-facing" class="internal tag-link">player-facing</a></li></ul></div></div><article class="popover-hint"><h1 id="a-short-history-of-azeroth">A Short History of Azeroth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-short-history-of-azeroth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout info" data-callout="info">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>What this is </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>The history your character already knows</strong>, in the order they would have learned it. No secrets, no twists — just the background any reasonably informed person in Year 29 would have picked up from stories, schooling, or being there.</p>
+<p>Read it once before session zero. You do not need to memorise it. Nobody is going to quiz you.</p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>How the years are counted </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Everyone dates from <strong>the day the Dark Portal opened</strong> and the orcs came through. That was Year 0. It is now <strong>Year 29</strong>.</p>
+<p>Before that, dates get vague and people say things like <em>“three centuries back”</em> or <em>“before the Sundering.”</em> The further back you go, the less anyone agrees.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="three-kinds-of-history">Three Kinds of History<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#three-kinds-of-history" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A person in Year 29 holds the past at three different distances, and knows it very differently at each one.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Distance</th><th>What It Feels Like</th></tr></thead><tbody><tr><td><strong>Myth</strong> — ten thousand years ago</td><td>Stories. Half-believed. Only the night elves claim to remember it, and they were there.</td></tr><tr><td><strong>The grandparents’ wars</strong> — 30 to 1,000 years ago</td><td>Documented, argued over, still politically live. Your grandfather fought in some of it.</td></tr><tr><td><strong>What you lived through</strong> — the last six years</td><td>Raw. Everyone has a personal version and most of them are still angry.</td></tr></tbody></table></div>
+<hr/>
+<h1 id="part-one--myth">Part One · Myth<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-one--myth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout quote" data-callout="quote">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>The honest summary </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Nobody knows how much of this is true. The night elves say they were there. Everyone else finds that hard to argue with and slightly irritating.</p>
+</div>
+</blockquote>
+<h2 id="the-world-was-made">The World Was Made<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-world-was-made" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The stories say <strong>titans</strong> — enormous beings of metal and light — came to an unfinished world, put it in order, and left. They built vaults and cities underground and then went away and never came back.</p>
+<p>You can go and look at the vaults. Uldaman in the <a href="../../Places/Eastern-Kingdoms/Badlands" class="internal" data-slug="Places/Eastern-Kingdoms/Badlands">Badlands</a> is one, and dwarven expeditions are digging it out right now. <strong>This part is not really in dispute.</strong> What the titans actually wanted, and whether they are coming back, absolutely is.</p>
+<h2 id="the-well-and-the-war">The Well and the War<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-well-and-the-war" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Ten thousand years ago there was one continent and a lake of raw magic at the centre of it called the <strong><a href="../../Lore/Cosmology/Arcane-Magic-and-the-Well-of-Eternity" class="internal alias" data-slug="Lore/Cosmology/Arcane-Magic-and-the-Well-of-Eternity">Well of Eternity</a></strong>. The night elf empire grew up around it and grew powerful and, most people agree, unbearable.</p>
+<p>Their queen and her court dug too deep into that power and opened a door. Through it came the <strong>Burning Legion</strong> — a demonic army whose entire purpose is unmaking worlds.</p>
+<p>The war that followed is called <strong><a href="../../Lore/History/The-War-of-the-Ancients" class="internal alias" data-slug="Lore/History/The-War-of-the-Ancients">The War of the Ancients</a></strong>. The night elves won, barely, at a cost that reset the map.</p>
+<h2 id="the-sundering">The Sundering<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-sundering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The Well exploded. <strong>The single continent broke apart</strong> into the ones that exist now — <a href="../../Places/Eastern-Kingdoms/Eastern-Plaguelands" class="internal alias" data-slug="Places/Eastern-Kingdoms/Eastern-Plaguelands">the Eastern Kingdoms</a> in the east, Kalimdor in the west, and a great deal of ocean in between where the middle used to be.</p>
+<p>That event is called <strong><a href="../../Lore/History/The-Sundering" class="internal alias" data-slug="Lore/History/The-Sundering">The Sundering</a></strong>, and it is the dividing line. Everything before it is myth. Everything after it is history.</p>
+<p>The surviving night elves withdrew into the forests, swore off the magic that had caused it, and did not speak to anyone else for ten thousand years.</p>
+<hr/>
+<h1 id="part-two--the-grandparents-wars">Part Two · The Grandparents’ Wars<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-two--the-grandparents-wars" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="trolls-were-here-first">Trolls Were Here First<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trolls-were-here-first" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Before anyone else, the continents belonged to <strong><a href="../../Lore/Peoples/Trolls" class="internal alias" data-slug="Lore/Peoples/Trolls">troll</a> empires</strong> — enormous, old, and now mostly ruins. Almost every city standing today is built on top of something a troll built first.</p>
+<p>Roughly two and a half thousand years ago, humans and the exiled high elves fought the trolls back together in <strong><a href="../../Lore/History/The-Troll-Wars" class="internal alias" data-slug="Lore/History/The-Troll-Wars">The Troll Wars</a></strong>. That alliance produced the human kingdom of <strong>Arathor</strong>, and the high elves taught humans arcane magic as payment.</p>
+<p>Every troll alive knows this history and is, without exception, still furious about it.</p>
+<h2 id="seven-human-kingdoms">Seven Human Kingdoms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#seven-human-kingdoms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Arathor eventually split into seven states — Stormwind, <a href="../../Places/Eastern-Kingdoms/Lordaeron" class="internal" data-slug="Places/Eastern-Kingdoms/Lordaeron">Lordaeron</a>, Gilneas, Alterac, Stromgarde, Kul Tiras, and <a href="../../Places/Eastern-Kingdoms/Dalaran" class="internal" data-slug="Places/Eastern-Kingdoms/Dalaran">Dalaran</a>. They spent centuries squabbling with each other in the ordinary way of neighbours.</p>
+<h2 id="the-portal-opens--year-0">The Portal Opens — Year 0<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-portal-opens--year-0" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>On the world of <strong>Draenor</strong>, the orcs were shamanic clan-people. Then the Burning Legion got to them, fed them demon blood, and turned them into an army.</p>
+<p>A portal opened between the worlds. The orcs came through it into the swamps south of Stormwind.</p>
+<h2 id="the-first-and-second-wars">The First and Second Wars<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-first-and-second-wars" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong><a href="../../Lore/History/The-First-War" class="internal alias" data-slug="Lore/History/The-First-War">The First War</a> (Years 0–5)</strong> — the orcs destroyed Stormwind. Refugees fled north by sea.</p>
+<p><strong><a href="../../Lore/History/The-Second-War" class="internal alias" data-slug="Lore/History/The-Second-War">The Second War</a> (Years 6–8)</strong> — the northern kingdoms formed the first <strong>Alliance</strong> and, with the high elves and dwarves, drove the orcs back. Lordaeron’s forces broke the Horde. The Knights of the Silver Hand were founded in this war and it is the thing they are proudest of.</p>
+<p><strong><a href="../../Lore/History/The-Invasion-of-Draenor" class="internal alias" data-slug="Lore/History/The-Invasion-of-Draenor">The Invasion of Draenor</a> (Years 17–18)</strong> — an Alliance expedition went <em>through</em> the Portal to finish the job. Draenor came apart while they were on it. Most of them never came home.</p>
+<h2 id="the-camps">The Camps<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-camps" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The orcs who surrendered were put in <strong>internment camps</strong> and kept there for the better part of twenty years.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Nobody agrees about this </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>The Alliance memory:</strong> we could not release a demon-controlled army back into the world, we fed and housed them, and it was more mercy than they showed at Stormwind.</p>
+<p><strong>The Horde memory:</strong> a generation was born behind a fence. Our language was not taught. Our shamans died in there. Whatever our fathers did, we did not do it, and we were still in the camp.</p>
+<p>Both of these are true at once. This argument is not settled and it comes up constantly.</p>
+</div>
+</blockquote>
+<hr/>
+<h1 id="part-three--what-you-lived-through">Part Three · What You Lived Through<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-three--what-you-lived-through" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="thrall">Thrall<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#thrall" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A young orc named <strong><a href="../../Characters/Major-NPCs/Thrall" class="internal" data-slug="Characters/Major-NPCs/Thrall">Thrall</a></strong> was raised in captivity as a human noble’s gladiator, escaped, found the last free clan, and learned the shamanism his people had lost. He emptied the camps.</p>
+<p>Then — and this is the part the Alliance did not expect — he took his people <strong>west, across the sea</strong>, away from the war entirely.</p>
+<h2 id="the-plague--years-2325">The Plague — Years 23–25<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-plague--years-2325" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Something started killing people in northern <a href="../../Places/Eastern-Kingdoms/Lordaeron" class="internal" data-slug="Places/Eastern-Kingdoms/Lordaeron">Lordaeron</a>. The dead got back up.</p>
+<p><strong><a href="../../Characters/Major-NPCs/Arthas-Menethil" class="internal alias" data-slug="Characters/Major-NPCs/Arthas-Menethil">Prince Arthas</a></strong> of Lordaeron, the crown prince and the Silver Hand’s finest paladin, went north to stop it. What happened to him up there is argued about. What is not argued about is what he did when he came back: <strong>he killed his own father on the throne</strong> and handed the kingdom to the dead.</p>
+<p>The northern kingdom is gone. Not conquered — <em>emptied</em>. Its survivors are refugees and its capital is a tomb.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>This is the wound </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>If you want to understand why anyone in this world behaves the way they do, it is usually this. Almost every adult human, dwarf, and high elf alive has lost someone to the plague or to what followed.</p>
+</div>
+</blockquote>
+<h2 id="hyjal--year-25">Hyjal — Year 25<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hyjal--year-25" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The Burning Legion came back, properly, with the plague as its opening move.</p>
+<p>Three peoples who had every reason to hate each other — <strong>orcs, humans, and night elves</strong> — met on the slopes of <strong><a href="../../Places/Kalimdor/Mount-Hyjal" class="internal alias" data-slug="Places/Kalimdor/Mount-Hyjal">Mount Hyjal</a></strong> and fought together. <a href="../../Characters/Major-NPCs/Thrall" class="internal" data-slug="Characters/Major-NPCs/Thrall">Thrall</a>’s Horde, <a href="../../Characters/Major-NPCs/Jaina-Proudmoore" class="internal alias" data-slug="Characters/Major-NPCs/Jaina-Proudmoore">Jaina Proudmoore</a>’s human survivors, and <a href="../../Characters/Major-NPCs/Tyrande-Whisperwind" class="internal alias" data-slug="Characters/Major-NPCs/Tyrande-Whisperwind">Tyrande Whisperwind</a>’s kaldorei.</p>
+<p>They won. The night elves spent <strong>ten thousand years of immortality</strong> to do it, burning their World Tree to destroy the Legion’s commander.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Nobody agrees about this either </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>On the road to Hyjal</strong>, the orc chieftain <a href="../../Characters/Major-NPCs/Grom-Hellscream" class="internal alias" data-slug="Characters/Major-NPCs/Grom-Hellscream">Grom Hellscream</a> and his clan cut down a great swathe of <a href="../../Places/Kalimdor/Ashenvale" class="internal" data-slug="Places/Kalimdor/Ashenvale">Ashenvale</a> and killed <strong><a href="../../Characters/Major-NPCs/Cenarius" class="internal" data-slug="Characters/Major-NPCs/Cenarius">Cenarius</a></strong>, the demigod who taught the night elves everything they know.</p>
+<p><strong>The night elf memory:</strong> they murdered a god and desecrated a forest, and then asked us to fight beside them.</p>
+<p><strong>The orc memory:</strong> Grom broke the demon blood curse for our entire people and died doing it. He was the first orc to drink it and the last to be freed of it.</p>
+<p>Both true. Four years later, the night elves are in the Alliance and the Warsong clan is still logging Ashenvale.</p>
+</div>
+</blockquote>
+<hr/>
+<h1 id="part-four--right-now">Part Four · Right Now<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#part-four--right-now" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="the-four-years-after">The Four Years After<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-four-years-after" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Everyone went home and nobody agreed what came next. That is where the campaign starts.</p>
+<ul>
+<li><strong>The night elves joined the Alliance</strong> — recently, narrowly, and they are not sure about it.</li>
+<li><strong>The orcs have a homeland</strong> for the first time: <a href="../../Places/Kalimdor/Durotar" class="internal" data-slug="Places/Kalimdor/Durotar">Durotar</a>, a red desert nobody else wanted, with <a href="../../Places/Capitals/Orgrimmar" class="internal" data-slug="Places/Capitals/Orgrimmar">Orgrimmar</a> built out of raw timber four years ago.</li>
+<li><strong>The <a href="../../Lore/Peoples/Tauren" class="internal" data-slug="Lore/Peoples/Tauren">Tauren</a> and the <a href="../../Lore/Peoples/Darkspear-Trolls" class="internal alias" data-slug="Lore/Peoples/Darkspear-Trolls">Darkspear trolls</a> joined the Horde</strong>, having been saved from extinction by it.</li>
+<li><strong>The <a href="../../Lore/Peoples/Forsaken" class="internal" data-slug="Lore/Peoples/Forsaken">Forsaken</a> joined too</strong> — undead who broke free of the Scourge and got their own minds back. Nobody is comfortable about this, including the Horde.</li>
+<li><strong>Stormwind stands</strong>, ruled by a ten-year-old king and a regent, and it is broke.</li>
+<li><strong><a href="../../Places/Capitals/Ironforge" class="internal" data-slug="Places/Capitals/Ironforge">Ironforge</a> is fine</strong>, is rich, and is quietly paying for most of the Alliance.</li>
+<li><strong><a href="../../Places/Eastern-Kingdoms/Dalaran" class="internal" data-slug="Places/Eastern-Kingdoms/Dalaran">Dalaran</a> is a crater</strong> and its surviving mages teach in back rooms.</li>
+<li><strong>Gnomeregan fell</strong> and the gnomes are refugees in Ironforge.</li>
+</ul>
+<h2 id="the-thing-about-right-now">The Thing About Right Now<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-thing-about-right-now" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>There is no war and there is no peace.</strong></p>
+<p><a href="../../Characters/Major-NPCs/Thrall" class="internal" data-slug="Characters/Major-NPCs/Thrall">Thrall</a> and <a href="../../Characters/Major-NPCs/Jaina-Proudmoore" class="internal alias" data-slug="Characters/Major-NPCs/Jaina-Proudmoore">Jaina Proudmoore</a> are both genuinely trying to keep it that way. Almost nobody on either side believes the other side is trying. Meanwhile the <a href="../../Places/Kalimdor/Ashenvale" class="internal" data-slug="Places/Kalimdor/Ashenvale">Ashenvale</a> logging, the <a href="../../Places/Kalimdor/Stonetalon-Mountains" class="internal alias" data-slug="Places/Kalimdor/Stonetalon-Mountains">Stonetalon</a> mines, and the <a href="../../Places/Eastern-Kingdoms/Hillsbrad-Foothills" class="internal alias" data-slug="Places/Eastern-Kingdoms/Hillsbrad-Foothills">Hillsbrad Foothills</a> border go on being fought over by people who are officially not at war.</p>
+<p>And every one of the disasters above left something behind that is still out there — a plague that never fully burned out, a clan that never accepted the peace, an order that lost its way.</p>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>The one thing to take from all this </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><strong>Everyone in this world has just survived something.</strong> Nobody is at their best. The institutions are broken, the heroes have scattered, and the people who should be in charge are dead, missing, or ten years old.</p>
+<p>That is the gap you walk into at level one.</p>
+</div>
+</blockquote>
+<hr/>
+<h2 id="if-you-remember-five-things">If You Remember Five Things<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#if-you-remember-five-things" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>The Dark Portal opened 29 years ago</strong> and started everything. Orcs are not from here.</li>
+<li><strong>The orcs were demon-controlled and are not any more.</strong> One of them died to break it.</li>
+<li><strong>Lordaeron was destroyed by its own prince</strong>, four years ago, and the survivors are everywhere.</li>
+<li><strong>Everyone fought together at Hyjal and won</strong>, and then immediately stopped speaking.</li>
+<li><strong>The night elves gave up immortality</strong> to make that work, and are still working out what that means.</li>
+</ol>
+<hr/>
+<h2 id="going-deeper">Going Deeper<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#going-deeper" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The detail behind all of this, if you want it:</p>
+<ul>
+<li><a href="../../Lore/History/Timeline-of-Azeroth" class="internal alias" data-slug="Lore/History/Timeline-of-Azeroth">Timeline of Azeroth</a> — the full chronology, dated</li>
+<li>The State of the World — where every region stands right now</li>
+<li>Peoples MOC — each people’s own version of this history, in much more depth</li>
+<li><a href="../../Factions/Alliance/The-Alliance" class="internal alias" data-slug="Factions/Alliance/The-Alliance">The Alliance</a> · <a href="../../Factions/Horde/The-Horde" class="internal alias" data-slug="Factions/Horde/The-Horde">The Horde</a> — how the two sides actually work</li>
+<li><a href="../../Player-Primer-—-Azeroth-in-Year-29" class="internal alias" data-slug="Player-Primer-—-Azeroth-in-Year-29">Player Primer — Azeroth in Year 29</a> — the short version, if this was too much</li>
+</ul>
+<h2 id="related">Related<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>History MOC · <a href="../../Lore/History/Timeline-of-Azeroth" class="internal alias" data-slug="Lore/History/Timeline-of-Azeroth">Timeline of Azeroth</a> · <a href="../../Player-Primer-—-Azeroth-in-Year-29" class="internal alias" data-slug="Player-Primer-—-Azeroth-in-Year-29">Player Primer — Azeroth in Year 29</a> · Canon Boundary — What Exists at Launch</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-88" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#a-short-history-of-azeroth" data-for="a-short-history-of-azeroth">A Short History of Azeroth</a></li><li class="depth-1"><a href="#three-kinds-of-history" data-for="three-kinds-of-history">Three Kinds of History</a></li><li class="depth-0"><a href="#part-one--myth" data-for="part-one--myth">Part One · Myth</a></li><li class="depth-1"><a href="#the-world-was-made" data-for="the-world-was-made">The World Was Made</a></li><li class="depth-1"><a href="#the-well-and-the-war" data-for="the-well-and-the-war">The Well and the War</a></li><li class="depth-1"><a href="#the-sundering" data-for="the-sundering">The Sundering</a></li><li class="depth-0"><a href="#part-two--the-grandparents-wars" data-for="part-two--the-grandparents-wars">Part Two · The Grandparents’ Wars</a></li><li class="depth-1"><a href="#trolls-were-here-first" data-for="trolls-were-here-first">Trolls Were Here First</a></li><li class="depth-1"><a href="#seven-human-kingdoms" data-for="seven-human-kingdoms">Seven Human Kingdoms</a></li><li class="depth-1"><a href="#the-portal-opens--year-0" data-for="the-portal-opens--year-0">The Portal Opens — Year 0</a></li><li class="depth-1"><a href="#the-first-and-second-wars" data-for="the-first-and-second-wars">The First and Second Wars</a></li><li class="depth-1"><a href="#the-camps" data-for="the-camps">The Camps</a></li><li class="depth-0"><a href="#part-three--what-you-lived-through" data-for="part-three--what-you-lived-through">Part Three · What You Lived Through</a></li><li class="depth-1"><a href="#thrall" data-for="thrall">Thrall</a></li><li class="depth-1"><a href="#the-plague--years-2325" data-for="the-plague--years-2325">The Plague — Years 23–25</a></li><li class="depth-1"><a href="#hyjal--year-25" data-for="hyjal--year-25">Hyjal — Year 25</a></li><li class="depth-0"><a href="#part-four--right-now" data-for="part-four--right-now">Part Four · Right Now</a></li><li class="depth-1"><a href="#the-four-years-after" data-for="the-four-years-after">The Four Years After</a></li><li class="depth-1"><a href="#the-thing-about-right-now" data-for="the-thing-about-right-now">The Thing About Right Now</a></li><li class="depth-1"><a href="#if-you-remember-five-things" data-for="if-you-remember-five-things">If You Remember Five Things</a></li><li class="depth-1"><a href="#going-deeper" data-for="going-deeper">Going Deeper</a></li><li class="depth-1"><a href="#related" data-for="related">Related</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../Lore/Peoples/Darkspear-Trolls" class="internal">Darkspear Trolls</a></li><li><a href="../../Lore/Peoples/Dwarves" class="internal">Dwarves</a></li><li><a href="../../Lore/Peoples/Forsaken" class="internal">Forsaken</a></li><li><a href="../../Lore/Peoples/Gnomes" class="internal">Gnomes</a></li><li><a href="../../Lore/Peoples/Humans" class="internal">Humans</a></li><li><a href="../../Lore/Peoples/Night-Elves" class="internal">Night Elves</a></li><li><a href="../../Lore/Peoples/Orcs" class="internal">Orcs</a></li><li><a href="../../Lore/Peoples/Tauren" class="internal">Tauren</a></li><li><a href="../../Player-Primer-—-Azeroth-in-Year-29" class="internal">Player Primer — Azeroth in Year 29</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://benjaman22.github.io/warcraft-campaign-wiki/">The Booty Bay Chronicle prints what walks in off the docks. If something's missing, ask your DM.</a></li><li><a href="https://www.blizzard.com/en-us/legal">World of Warcraft and related imagery are trademarks of Blizzard Entertainment, Inc. This is a non-commercial fan site.</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
