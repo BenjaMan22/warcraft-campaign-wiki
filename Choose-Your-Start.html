@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Choose Your Start · The Booty Bay Chronicle</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400;700&amp;family=Spectral:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="BBC WoW Campaign"/><meta property="og:title" content="Choose Your Start · The Booty Bay Chronicle"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Choose Your Start · The Booty Bay Chronicle"/><meta name="twitter:description" content="Choose Your Start What this is Twelve possible openings. Each runs about three sessions, ends around level 3, and hands you into the wider campaign."/><meta property="og:description" content="Choose Your Start What this is Twelve possible openings. Each runs about three sessions, ends around level 3, and hands you into the wider campaign."/><meta property="og:image:alt" content="Choose Your Start What this is Twelve possible openings. Each runs about three sessions, ends around level 3, and hands you into the wider campaign."/><meta property="og:image" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta property="og:image:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta name="twitter:image" content="https://benjaman22.github.io/warcraft-campaign-wiki/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="benjaman22.github.io/warcraft-campaign-wiki"/><meta property="og:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/Choose-Your-Start"/><meta property="twitter:url" content="https://benjaman22.github.io/warcraft-campaign-wiki/Choose-Your-Start"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Choose Your Start What this is Twelve possible openings. Each runs about three sessions, ends around level 3, and hands you into the wider campaign."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvRG5ELVdvVy1DYW1wYWlnbi9EbkQtV29XLUNhbXBhaWduL3F1YXJ0ei9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://benjaman22.github.io/warcraft-campaign-wiki/index.xml"/></head><body data-slug="Choose-Your-Start"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">BBC WoW Campaign</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-81"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-81" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Choose Your Start</a></div></nav><h1 class="article-title">Choose Your Start</h1><ul class="tags"><li><a href="./tags/reference" class="internal tag-link">reference</a></li><li><a href="./tags/player-facing" class="internal tag-link">player-facing</a></li></ul></div></div><article class="popover-hint"><h1 id="choose-your-start">Choose Your Start<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#choose-your-start" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout info" data-callout="info">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>What this is </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Twelve possible openings. Each runs about three sessions, ends around level 3, and hands you into the wider campaign.</p>
+<p><strong>You are picking a flavour, not a fate.</strong> Read them, see which one makes you want to build a character, and tell me. Details will shift once we’re actually playing — that’s fine and expected.</p>
+</div>
+</blockquote>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Your start does not have to match your species </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Want the Booty Bay opening as a tauren? Northshire as a dwarf? Good — we’ll write a reason you’re there at session zero. A character who’s visibly out of place somewhere is usually more interesting than one who isn’t.</p>
+</div>
+</blockquote>
+<hr/>
+<h3 id="northshire--elwynn-forest">Northshire — Elwynn Forest<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#northshire--elwynn-forest" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Golden farmland, quietly abandoned by the people who are supposed to govern it.</em></p>
+<p>Late barley, an abbey bell that rings for a class of novices who don’t arrive any more, and a valley that looks like the sort of place where nothing happens. Your first fights are small and local — vermin in a mine, wolves in the timber, toughs on the road. What makes it sting is the toughs: they wear red bandannas, they aren’t hiding, and nobody has arrested them because there is nobody left to send.</p>
+<p><strong>You’ll meet</strong> a marshal who hasn’t slept properly in a month, an abbey brother who keeps copies of every unanswered letter, and a deputy young enough to think you’re impressive.</p>
+<p><strong>You’ll fight</strong> kobolds, wolves, and men who used to be stonemasons.</p>
+<p><strong>And then</strong> a rider comes up the road wearing Ironforge colours instead of Stormwind’s, carrying a commission your own crown declined to fund.</p>
+<hr/>
+<h3 id="coldridge-valley--dun-morogh">Coldridge Valley — Dun Morogh<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#coldridge-valley--dun-morogh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Snow, forge-light, and a dig that keeps turning up the wrong century.</em></p>
+<p>Cold that gets into your boots, the constant low note of Ironforge’s furnaces through the rock, and prospectors who are far more excited than the situation warrants. The work is honest — thin the boars, recover a lost supply sledge, walk the ridge and count enemy campfires — right up until someone hands you something they pulled out of the ground.</p>
+<p><strong>You’ll meet</strong> an old prospector who has stopped filing reports with the Explorers’ League, and won’t say why.</p>
+<p><strong>You’ll fight</strong> boars, wendigo, and Frostmane trolls who are abandoning their own hold without being driven out of it.</p>
+<p><strong>And then</strong> you carry a stone tablet down to Ironforge, and the Senate seals the find the same week it arrives.</p>
+<hr/>
+<h3 id="anvilmar--dun-morogh">Anvilmar — Dun Morogh<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anvilmar--dun-morogh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Relentless cheerfulness laid carefully over a fresh mass grave.</em></p>
+<p>A displaced nation living in a borrowed corner of somebody else’s mountain, rebuilding at volume. Everyone is friendly, everything is loud, and nobody talks about the four fifths of gnomes who are not here. The work is salvage, repair, and the occasional errand that people go quiet about.</p>
+<p><strong>You’ll meet</strong> engineers who will improve your equipment without being asked and will not accept payment.</p>
+<p><strong>You’ll fight</strong> troggs coming up through the tunnels, and — harder — irradiated kin who were neighbours a few years ago.</p>
+<p><strong>And then</strong> something starts transmitting out of the sealed city, and the voice on it sounds <em>pleased.</em></p>
+<hr/>
+<h3 id="shadowglen--teldrassil">Shadowglen — Teldrassil<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shadowglen--teldrassil" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Silver light, complete quiet, and roots that feel wrong under your hand.</em></p>
+<p>A whole landscape growing in the branches of one enormous tree, lit by moonlight that never quite becomes day. Nothing raises its voice. Your early work is caretaking — tend the glade, check the wards, escort someone who has only just woken up — and the unease creeps in sideways.</p>
+<p><strong>You’ll meet</strong> a druid who slept through the entire war and is asking, carefully, what year it is and who won.</p>
+<p><strong>You’ll fight</strong> spiders, corrupted furbolg who were friends within living memory, and naga on the shoreline.</p>
+<p><strong>And then</strong> you learn the tree you live in was grown without a blessing, and the druids will not say another word about it.</p>
+<hr/>
+<h3 id="valley-of-trials--durotar">Valley of Trials — Durotar<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valley-of-trials--durotar" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Red canyon, hard training, and a nation four years old that is not certain it will last.</em></p>
+<p>Heat off the rock, hammering from a forge that never stops, and drums during training hours you feel through your feet. This is a frontier settlement doing frontier work, and everyone here is aware that the whole Horde is one bad season from failing.</p>
+<p><strong>You’ll meet</strong> a young orc who was gutted by a scorpid and left in a canyon by his own hunting partner — and who wants to talk about <em>why</em>.</p>
+<p><strong>You’ll fight</strong> scorpids, boars, and eventually people who share your banner.</p>
+<p><strong>And then</strong> you carry notes written in a scholar’s hand to Orgrimmar, and they stop Eitrigg mid-sentence.</p>
+<hr/>
+<h3 id="senjin-village--durotar">Sen’jin Village — Durotar<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#senjin-village--durotar" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Stilt houses, drums, and an island you can see from the beach and cannot go to.</em></p>
+<p>Salt, smoke, and cooking that is frankly better than anything in Orgrimmar. A tribe of a few hundred living as guests on a coast they were given and then lost half of. Your work is keeping the village fed and defended, which sounds small until you understand how few of them are left.</p>
+<p><strong>You’ll meet</strong> an elder who will not say the word <em>naga</em> aloud, because of what it meant the last time.</p>
+<p><strong>You’ll fight</strong> murlocs, naga, and tribesmen who are not themselves.</p>
+<p><strong>And then</strong> you find out exactly what is holding the Echo Isles, and how close it is.</p>
+<hr/>
+<h3 id="red-cloud-mesa--mulgore">Red Cloud Mesa — Mulgore<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#red-cloud-mesa--mulgore" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Gold grass to every horizon, wind, and someone arriving with paperwork.</em></p>
+<p>Sun-warm grass, kodo bells, drying hides, and the most peaceful place either continent has. Nobody hurries. Your first work is the work of a settled camp — hunt for the herd, drive off raiders, sit through a conversation with an elder that takes considerably longer than you expected.</p>
+<p><strong>You’ll meet</strong> a chieftain who listens to you completely before answering, which is more unnerving than being interrupted.</p>
+<p><strong>You’ll fight</strong> plainstriders, Bristleback quilboar, centaur, and eventually a surveying crew with a legal claim.</p>
+<p><strong>And then</strong> the receipt you recover gets sent to Orgrimmar rather than to the goblins who wrote it.</p>
+<hr/>
+<h3 id="deathknell--tirisfal-glades">Deathknell — Tirisfal Glades<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deathknell--tirisfal-glades" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Grey light, cold ground, and the open question of who you used to be.</em></p>
+<p>Dead trees, tidy fields growing nothing right, crows that don’t call. You have been awake for a short time. Nobody asked whether you wanted to be. Your first jobs are errands that are also, transparently, a test of whether you are worth the trouble of keeping.</p>
+<p><strong>You’ll meet</strong> two officials who will discuss your usefulness in front of you, and a fellow Forsaken still trying to be the person they were.</p>
+<p><strong>You’ll fight</strong> Scarlet zealots who kill your kind on sight, and mindless Scourge who used to be exactly what you are.</p>
+<p><strong>And then</strong> you’re handed something that makes it clear your new nation is keeping secrets from the allies who took it in.</p>
+<hr/>
+<h2 id="neutral--built-for-a-mixed-party">Neutral — built for a mixed party<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#neutral--built-for-a-mixed-party" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout note" data-callout="note">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>These four work when the table isn't all one faction </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>Each has an in-world reason an orc and a dwarf can share a table without anyone drawing steel.</p>
+</div>
+</blockquote>
+<h3 id="ratchet--the-barrens">Ratchet — The Barrens<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ratchet--the-barrens" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Dusty boomtown, everyone for hire, cheerfully amoral.</em></p>
+<p>A goblin port on a coast nobody wanted, where the neutrality is enforced with cannons because it’s profitable. Dust, engine oil, and three arguments happening at once. You aren’t sworn to anyone — you’re a <strong>crew</strong>, with a paymaster and a contract, and that turns out to solve a great many problems.</p>
+<p><strong>You’ll meet</strong> a Forsaken teamster on genuinely warm terms with the orc guards at the Crossroads, which will quietly reorganise whatever you thought the Horde was.</p>
+<p><strong>You’ll fight</strong> zhevra, centaur raiders, quilboar, and murlocs along the coast.</p>
+<p><strong>And then</strong> you find the missing wagons burned with the cargo still inside. Nothing was stolen. Something was <em>prevented from arriving.</em></p>
+<hr/>
+<h3 id="booty-bay--stranglethorn-vale">Booty Bay — Stranglethorn Vale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#booty-bay--stranglethorn-vale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Humid, lawless, extremely funny until it abruptly isn’t.</em></p>
+<p>A town built in tiers down a cliff into a cove, painted every colour goblins could source, smelling of fish and tar and gunpowder. There’s a gallows on the dock and the man in it waves at you. Beyond the last building, jungle that does not care what banner you were born under.</p>
+<p><strong>You’ll meet</strong> a goblin baron who will spend you like coin and apologise afterwards with money, which is the local dialect for sincerity.</p>
+<p><strong>You’ll fight</strong> jungle cats, raptors, and pirates who deserted because their captain stopped taking prizes and started <em>searching</em> for something.</p>
+<p><strong>And then</strong> the survey crew you rescued describes what they saw: a cage of bound reeds, person-sized, that has never held a person.</p>
+<hr/>
+<h3 id="moonglade">Moonglade<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#moonglade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Sacred, still, and quietly wrong.</em></p>
+<p>A high valley that has never been fought over — birches in water that doesn’t move, and the only place in the world where a tauren and a night elf working as equals is unremarkable. The order here is short-handed and hiring, and you don’t need to be a druid to be useful.</p>
+<p><strong>You’ll meet</strong> a nineteen-year-old tauren druid asking whether she’s doing it right, with no elder anywhere she can ask.</p>
+<p><strong>You’ll fight</strong> corrupted deer and wolves that are more pitiable than frightening, and satyr who have been counting you.</p>
+<p><strong>And then</strong> you find sites already cleansed — correctly, competently, by someone who left no name. The archdruids react to that like bad news, and won’t explain why.</p>
+<hr/>
+<h3 id="southshore--hillsbrad-foothills">Southshore — Hillsbrad Foothills<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#southshore--hillsbrad-foothills" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><em>Pretty farmland with every north-facing window boarded up.</em></p>
+<p>Green hills down to a grey sea, orchards in fruit, boats out, the bell ringing the hour. The most <em>normal</em> place in the campaign. Nobody here will use the word war — they say “the troubles,” and change the subject.</p>
+<p><strong>You’ll meet</strong> two towns that traded for years and now won’t say which of them stopped first.</p>
+<p><strong>You’ll fight</strong> mountain lions, shoreline murlocs, and Alterac bandits who are far better equipped than bandits should be.</p>
+<p><strong>And then</strong> you open a chest in a ruined keep and find two sets of tabards — one from each side. Both unworn. Both new.</p>
+<hr/>
+<h2 id="related">Related<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Player-Primer-—-Azeroth-in-Year-29" class="internal alias" data-slug="Player-Primer-—-Azeroth-in-Year-29">Player Primer — Azeroth in Year 29</a> · <a href="./Rules/Playable-Species-at-Launch" class="internal alias" data-slug="Rules/Playable-Species-at-Launch">Playable Species at Launch</a> · <a href="./Rules/Classes-of-Azeroth" class="internal alias" data-slug="Rules/Classes-of-Azeroth">Classes of Azeroth</a> · <a href="./Lore/History/A-Short-History-of-Azeroth" class="internal alias" data-slug="Lore/History/A-Short-History-of-Azeroth">A Short History of Azeroth</a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc"><button type="button" class="toc-header" aria-controls="toc-42" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#choose-your-start" data-for="choose-your-start">Choose Your Start</a></li><li class="depth-2"><a href="#northshire--elwynn-forest" data-for="northshire--elwynn-forest">Northshire — Elwynn Forest</a></li><li class="depth-2"><a href="#coldridge-valley--dun-morogh" data-for="coldridge-valley--dun-morogh">Coldridge Valley — Dun Morogh</a></li><li class="depth-2"><a href="#anvilmar--dun-morogh" data-for="anvilmar--dun-morogh">Anvilmar — Dun Morogh</a></li><li class="depth-2"><a href="#shadowglen--teldrassil" data-for="shadowglen--teldrassil">Shadowglen — Teldrassil</a></li><li class="depth-2"><a href="#valley-of-trials--durotar" data-for="valley-of-trials--durotar">Valley of Trials — Durotar</a></li><li class="depth-2"><a href="#senjin-village--durotar" data-for="senjin-village--durotar">Sen’jin Village — Durotar</a></li><li class="depth-2"><a href="#red-cloud-mesa--mulgore" data-for="red-cloud-mesa--mulgore">Red Cloud Mesa — Mulgore</a></li><li class="depth-2"><a href="#deathknell--tirisfal-glades" data-for="deathknell--tirisfal-glades">Deathknell — Tirisfal Glades</a></li><li class="depth-1"><a href="#neutral--built-for-a-mixed-party" data-for="neutral--built-for-a-mixed-party">Neutral — built for a mixed party</a></li><li class="depth-2"><a href="#ratchet--the-barrens" data-for="ratchet--the-barrens">Ratchet — The Barrens</a></li><li class="depth-2"><a href="#booty-bay--stranglethorn-vale" data-for="booty-bay--stranglethorn-vale">Booty Bay — Stranglethorn Vale</a></li><li class="depth-2"><a href="#moonglade" data-for="moonglade">Moonglade</a></li><li class="depth-2"><a href="#southshore--hillsbrad-foothills" data-for="southshore--hillsbrad-foothills">Southshore — Hillsbrad Foothills</a></li><li class="depth-1"><a href="#related" data-for="related">Related</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="./Player-Primer-—-Azeroth-in-Year-29" class="internal">Player Primer — Azeroth in Year 29</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://benjaman22.github.io/warcraft-campaign-wiki/">The Booty Bay Chronicle prints what walks in off the docks. If something's missing, ask your DM.</a></li><li><a href="https://www.blizzard.com/en-us/legal">World of Warcraft and related imagery are trademarks of Blizzard Entertainment, Inc. This is a non-commercial fan site.</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>
